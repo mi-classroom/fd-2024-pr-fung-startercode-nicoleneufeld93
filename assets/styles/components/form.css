@@ -42,20 +42,19 @@
     input[type="text"],
     input[type="email"],
     textarea {
-        border: none; /* Entfernt den Standard-Rahmen */
-        border-bottom: 2px solid #10CFA3; /* Untere Linie in der gewünschten Farbe */
-        padding: 10px 0; /* Innenabstand nur oben und unten */
-        box-sizing: border-box; /* Berücksichtigt Padding und Border */
-        outline: none; /* Entfernt den Standard-Außenrahmen */
-        width: 30%; /* Vollständige Breite */
-        padding: 10px; /* Innenabstand */
+        width: 30%; 
+        box-sizing: border-box; 
+        padding: 10px; 
+        border: none;
+        border-bottom: 2px solid #10CFA3; 
+        outline: none;
     }
 
     button {
-        width: 100%; /* Vollständige Breite */
-        padding: 10px; /* Innenabstand */
-        background-color: var(--color-pink); /* Blaue Hintergrundfarbe */
-        color: white; /* Weiße Schriftfarbe */
+        width: 100%; 
+        padding: 10px; 
+        background-color: var(--color-pink); 
+        color: white; 
         border: none; /* Keine Rahmen */
         border-radius: 4px; /* Abgerundete Ecken */
         cursor: pointer; /* Handcursor */

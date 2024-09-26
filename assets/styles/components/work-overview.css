@@ -1,2 +1,51 @@
 /* Work Overview
 ############################################################################ */
+.work-list {
+        display: grid;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  
+    li {
+      overflow: hidden;
+      font-weight: var(--fw-medium);
+      text-align: center;
+      transition: all var(--tr-fast);
+      vertical-align: middle;
+    
+      /* stylelint-disable-next-line no-descending-specificity */
+      a {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        border: none;
+        aspect-ratio: 3/2;
+        background-color: rgb(0 0 0 / 3%);
+        hyphens: auto;
+        line-height: var(--lh-tight);
+        text-decoration: none;
+        
+        &:hover {
+          background-color: var(--color-lighten);
+          color: var(--color-lightest);
+  
+          i {
+            color: var(--color-lightest);
+          }
+        }
+      }
+  
+      /* stylelint-disable-next-line no-descending-specificity */
+      i {
+        display: block;
+        margin-top: 1ch !important;
+        margin-bottom: 0.5ch !important;
+        color: var(--color-darkblue);
+        text-align: center;
+      }
+    }
+  }

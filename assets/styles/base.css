@@ -71,6 +71,9 @@ h3:has(i[class^="icofont-"]) {
   margin-top: var(--size-xl);
 }
 
+h4 {
+  color: var(--color-darkest);
+}
 
 p {
   margin-bottom: var(--size-xs);

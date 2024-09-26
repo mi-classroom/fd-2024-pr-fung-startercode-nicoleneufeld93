@@ -10,3 +10,12 @@
     content: ",";
   }
 }
+
+.keywords {
+  list-style-type: none; /* Keine Aufzählungszeichen */
+  padding: 0; /* Kein Padding */
+  background: #fff; /* Hintergrundfarbe für die Liste */
+  border: 1px solid #ddd; /* Rahmen um die Liste */
+  border-radius: 5px; /* Abgerundete Ecken */
+  padding: 10px; /* Innenabstand */
+}
