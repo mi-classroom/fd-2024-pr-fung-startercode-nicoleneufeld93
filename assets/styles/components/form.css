@@ -1,5 +1,87 @@
-/* stylelint-disable no-descending-specificity */
 
 
-/* Form
-############################################################################ */
+  .thema-vorschlagen {
+    &.has-seperator {
+      padding-top: var(--size-s);
+      border-top: dotted var(--border-width) var(--border-color);
+      margin-top: var(--size-xl);
+          }
+  
+    &.with-bg-gray,
+    &.with-bg-dark{
+      padding-top: var(--size-xl);
+      padding-bottom: var(--size-xxl);
+      margin-top: var(--size-xl);
+      background-color: var(--color-dark);
+  
+      @media only screen and (width <= 40rem) {
+        padding: var(--size-xl) var(--size-m);
+        margin: calc(var(--size-m) * -1);
+        margin-top: var(--size-xl) ;
+      }
+  
+      @media only screen and (width > 40rem) {
+        padding-left: var(--size-xl);
+        margin-left: calc(var(--size-xl) * -1);
+      }
+    
+    &.with-bg-dark{
+      background-color: var(--color-dark);
+      * { color: var(--color-lightest) }
+    }
+  
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border: none; /* Entfernt den Standard-Rahmen */
+        border-bottom: 2px solid #10CFA3; /* Untere Linie in der gewünschten Farbe */
+        padding: 10px 0; /* Innenabstand nur oben und unten */
+        box-sizing: border-box; /* Berücksichtigt Padding und Border */
+        outline: none; /* Entfernt den Standard-Außenrahmen */
+        width: 30%; /* Vollständige Breite */
+        padding: 10px; /* Innenabstand */
+    }
+
+    button {
+        width: 100%; /* Vollständige Breite */
+        padding: 10px; /* Innenabstand */
+        background-color: var(--color-pink); /* Blaue Hintergrundfarbe */
+        color: white; /* Weiße Schriftfarbe */
+        border: none; /* Keine Rahmen */
+        border-radius: 4px; /* Abgerundete Ecken */
+        cursor: pointer; /* Handcursor */
+        font-size: 16px; /* Schriftgröße */
+        transition: background-color 0.3s; /* Übergangseffekt */
+    }
+}
+
+
+  }
+  
+  .section.with-bg-gray + .section.with-bg-dark{
+    margin-top: 0;
+  }
+  
+  section + section{
+    margin-top: var(--size-xl);
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Abstand zwischen den Gruppen */
+}
+
+label {
+    display: block; /* Label als Block-Element */
+    margin-bottom: 5px; /* Abstand unter dem Label */
+    font-weight: bold; /* Fettgedruckt */
+}
+

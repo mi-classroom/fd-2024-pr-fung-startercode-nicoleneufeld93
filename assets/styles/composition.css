@@ -60,6 +60,12 @@
       padding-left: var(--size-xl);
       margin-left: calc(var(--size-xl) * -1);
     }
+
+    a {
+      color: var(--color-green);
+      text-decoration: none;
+      transition: none;
+    }
   }
 
   &.with-bg-dark{

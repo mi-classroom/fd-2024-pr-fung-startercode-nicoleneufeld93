@@ -29,11 +29,12 @@
     h3 {
       padding-top: var(--size-m);
       margin-bottom: var(--size-s);
-      color: var(--color-darkblue);
+      color: var(--color-dark);
     }
 
     p {
       line-height: var(--lh-tight);
+      color: var(--color-green);
     }
 
     &:hover{
@@ -51,4 +52,4 @@
       }
     }
   }
-}
+}}}}
